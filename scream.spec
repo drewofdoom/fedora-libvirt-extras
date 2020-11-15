@@ -13,7 +13,7 @@ License: MS-PL
 URL: https://github.com/duncanthrax/scream/tree/master/Receivers/unix
 Source0: https://github.com/duncanthrax/%{name}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
-BuildRequires: cmake pulseaudio-libs-devel alsa-lib-devel
+BuildRequires: cmake gcc pulseaudio-libs-devel alsa-lib-devel
 Requires: pulseaudio
 
 %description
