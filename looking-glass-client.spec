@@ -10,7 +10,7 @@
 
 Name: looking-glass-client
 Version: B2
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: VGA PCI Pass-through receiver leveraging IVSHMEM
 
 License: GPL-2.0
@@ -20,7 +20,6 @@ Source1: https://github.com/gnif/LGMP/archive/%{commit1}.tar.gz
 Source2: https://github.com/gnif/PureSpice/archive/%{commit2}.tar.gz
 
 BuildRequires: make gcc cmake binutils-devel SDL2-devel SDL2_ttf-devel nettle-devel spice-protocol fontconfig-devel libX11-devel egl-wayland-devel wayland-devel mesa-libGLU-devel mesa-libGLES-devel mesa-libGL-devel mesa-libEGL-devel libXfixes-devel libXi-devel
-Requires: libvirt
 
 %description
 VGA PCI Pass-through receiver leveraging IVSHMEM
