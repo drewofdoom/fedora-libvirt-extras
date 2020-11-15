@@ -9,7 +9,7 @@ Version: 3.6
 Release: 1%{?dist}
 Summary: Scream audio receiver using Pulseaudio, ALSA or stdout as audio output.
 
-License: MIT
+License: MS-PL
 URL: https://github.com/duncanthrax/scream/tree/master/Receivers/unix
 Source0: https://github.com/duncanthrax/%{name}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
