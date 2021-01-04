@@ -6,7 +6,7 @@
 
 Name: scream
 Version: 3.6
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Scream audio receiver using Pulseaudio, ALSA or stdout as audio output.
 
 License: MS-PL
@@ -14,7 +14,6 @@ URL: https://github.com/duncanthrax/scream/tree/master/Receivers/unix
 Source0: https://github.com/duncanthrax/%{name}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildRequires: cmake gcc pulseaudio-libs-devel alsa-lib-devel
-Requires: pulseaudio
 
 %description
 Scream audio receiver using Pulseaudio, ALSA or stdout as audio output.
@@ -37,5 +36,8 @@ install -p -m 0755 Receivers/unix/build/%{name} %{buildroot}/%{_bindir}/
 %{_bindir}/scream
 
 %changelog
+* Sat Nov 14 2020 Drew DeVore <drew@devorcula.com> - 3.6-2
+- Remove pulseaudio dependency
+
 * Sat Nov 14 2020 Drew DeVore <drew@devorcula.com> - 3.6-1
 - Initial build
