@@ -1,16 +1,16 @@
 %global debug_package %{nil}
 # Global variables for github repository
-%global commit0 76710ef20120432a4a9aab1949fde71c0de93781
-%global gittag0 B2
+%global commit0 2973319bff80bf1531265bdbec6707bdda3f40eb
+%global gittag0 B3
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
-%global commit1 2a1477550cc122dcac8af7016ac5f15dec2e139a
+%global commit1 8ddc0da9ddbfb8c7c91553c939055582da86abfc
 %global shortcommit1 %(c=%{commit1}; echo ${c:0:7})
-%global commit2 4ca2b08d007c0cd17665f6f19fb160a3c111024b
+%global commit2 00961e8f43c55356df847d6f5753560d12158165
 %global shortcommit2 %(c=%{commit2}; echo ${c:0:7})
 
 Name: looking-glass-client
-Version: B2
-Release: 2%{?dist}
+Version: B3
+Release: 1%{?dist}
 Summary: VGA PCI Pass-through receiver leveraging IVSHMEM
 
 License: GPL-2.0
@@ -45,5 +45,8 @@ install -p -m 0755 client/build/%{name} %{buildroot}/%{_bindir}/
 %license
 
 %changelog
-* Sat Nov 14 2020 Drew DeVore <drew@devorcula.com> - 3.6-1
+* Sat Apr 17 2021 Drew DeVore <drew@devorcula.com> - B3
+- Update to latest version
+
+* Sat Nov 14 2020 Drew DeVore <drew@devorcula.com> - B2
 - Initial build
