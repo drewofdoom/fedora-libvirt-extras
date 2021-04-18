@@ -31,6 +31,7 @@ BuildRequires: fontconfig-devel
 BuildRequires: libX11-devel
 BuildRequires: egl-wayland-devel
 BuildRequires: wayland-devel
+BuildRequires: wayland-protocols-devel
 BuildRequires: mesa-libGLU-devel
 BuildRequires: mesa-libGLES-devel
 BuildRequires: mesa-libGL-devel
